@@ -1,4 +1,4 @@
-const a = document.querySelector("btn");
+const a = document.querySelector(".btn");
 a.onclick = function (){
 alert("WELCOME");
 }
