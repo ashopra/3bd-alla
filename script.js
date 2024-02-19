@@ -1,4 +1,5 @@
+import info from "./info.json" assert {type: "json"}
 const a = document.querySelector(".btn");
 a.onclick = function (){
-alert("WELCOME");
+alert(info[1]);
 }
