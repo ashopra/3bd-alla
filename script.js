@@ -13,7 +13,10 @@ const app = express();
 app.use(cors());
 
 // Your other routes and middleware
-
+app.get('api/data',(req, res) =>{
+  res.json({message:'your api response'});
+});
+  
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
 });
