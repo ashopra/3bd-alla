@@ -13,7 +13,7 @@ const app = express();
 app.use(cors());
 
 // Your other routes and middleware
-app.get('api/data',(req, res) =>{
+app.get('/api/data',(req, res) =>{
   res.json({message:'your api response'});
 });
   
