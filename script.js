@@ -4,7 +4,7 @@ const b = document.querySelector(".stuts");
 b.textContent = info[1];
 //a.onclick = oauthrize();
 
-function oauthrize(){
+a.onclick = function (){
   const url = 'https://twitter.com/i/oauth2/authorize';
   const param = new URLSearchParams({
   'response_type': 'code',
