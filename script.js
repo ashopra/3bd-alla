@@ -1,11 +1,9 @@
 import info from "./info.json" assert {type: "json"};
 const a = document.querySelector(".btn");
 const b = document.querySelector(".stuts");
+b.textContent = info[1];
+//a.onclick = oauthrize();
 
-a.onclick = oauthrize();
-function show(d){
-  b.textContent = d;
-};
 function oauthrize(){
   const url = 'https://twitter.com/i/oauth2/authorize';
   const param = new URLSearchParams({
