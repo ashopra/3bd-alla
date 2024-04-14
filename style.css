@@ -1,4 +1,18 @@
-body{background-color: grey;}
-.btn{display: block;text-align: center;background: #039be5;
-     text-transform: uppercase;text-decoration: none;width: 50%;
-     margin: auto;padding: 16px;border-radius: 4px;cursor: pointer;}
+body{
+     background-color: grey;
+}
+.btn{
+     display: block;
+     text-align: center;
+     background: #039be5;
+     text-transform: uppercase;
+     text-decoration: none;
+     width: 50%;
+     margin: auto;
+     padding: 16px;
+     border-radius: 4px;
+     cursor: pointer;
+}
+.stuts{
+     text-align: center;
+}
