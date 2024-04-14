@@ -15,8 +15,8 @@ a.onclick = function (){
   const url = 'https://twitter.com/i/oauth2/authorize';
   const param = new URLSearchParams({
   'response_type': 'code',
-  'client_id': 'M1M5R3BMVy13QmpScXkzTUt5OE46MTpjaQ',
-  'redirect_uri': 'https://www.example.com',
+  'client_id': config.CLIENT_ID,
+  'redirect_uri': 'https://ashopra.github.io/3bd-alla/',
   'scope': 'tweet.read users.read offline.access',
   'state': uniqid(16),
   'code_challenge': uniqid(64),
