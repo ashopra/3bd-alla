@@ -12,6 +12,7 @@ body{
      padding: 16px;
      border-radius: 4px;
      cursor: pointer;
+     border: (2px, solid, blue);
 }
 .stuts{
      text-align: center;
