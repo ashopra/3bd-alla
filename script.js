@@ -1,7 +1,9 @@
 import info from "./info.json" assert {type: "json"};
-const a = document.querySelector(".btn");
-const b = document.querySelector(".stuts");
-b.textContent = JSON.stringify(info) ;
+const a = document.querySelector(".btn-t");
+const b = document.querySelector(".btn-g");
+const c = document.querySelector(".btn-p");
+const d = document.querySelector(".stuts");
+d.textContent = JSON.stringify(info) ;
 function uniqid(length) {
   const chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
   let result = '';
@@ -24,3 +26,5 @@ a.onclick = function (){
     });
   location.href = url + '?' + param;
 };
+b.onclick = function (){};
+c.onclick = function (){};
