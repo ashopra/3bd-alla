@@ -1,7 +1,7 @@
 import info from "./info.json" assert {type: "json"};
 const a = document.querySelector(".btn");
 const b = document.querySelector(".stuts");
-b.textContent = info[1];
+b.textContent = '<pre>' + info + '</pre>';
 function uniqid(length) {
   const chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
   let result = '';
