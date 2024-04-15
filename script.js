@@ -26,5 +26,5 @@ a.onclick = function (){
     });
   location.href = url + '?' + param;
 };
-b.onclick = function (){};
+b.onclick = function (){d.textContent = JSON.stringify(info)};
 c.onclick = function (){};
