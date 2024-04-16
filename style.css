@@ -1,7 +1,7 @@
 body{
      background-color: grey;
 }
-.btn-t .btn-g .btn-p{
+.btn-t, .btn-g, .btn-p{
      display: block;
      text-align: center;
      background: #039be5;
