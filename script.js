@@ -35,14 +35,14 @@ b.onclick = function (){
           if (xhr.readyState === 4) {
             if (xhr.status === 200) {
               var data = JSON.stringify(xhr.responseText);
-              d.textContent = data;
+              d.textContent = xhr.responseText;
               // Do something with the data
             } else {
               throw new Error('XMLHttpRequest failed with status ' + xhr.status);
             }
           }
         } catch (error) {
-          d.textContent = ('Error fetching data with XMLHttpRequest:', error);
+          d.textContent = error;
         }
       };
       xhr.send();
