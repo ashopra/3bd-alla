@@ -26,5 +26,6 @@ a.onclick = function (){
     });
   location.href = url + '?' + param;
 };
+//https://3bda11a.000webhostapp.com/api/
 b.onclick = function (){d.textContent = 'GET';};
 c.onclick = function (){d.textContent = 'POST';};
