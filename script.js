@@ -1,4 +1,4 @@
-import info from "./info.json" assert {type: "json"};
+import info from "./info.json" /*assert {type: "json"}*/;
 const a = document.querySelector(".btn-t");
 const b = document.querySelector(".btn-g");
 const c = document.querySelector(".btn-p");
