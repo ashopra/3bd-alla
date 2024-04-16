@@ -34,8 +34,8 @@ b.onclick = function (){
         try {
           if (xhr.readyState === 4) {
             if (xhr.status === 200) {
-              var data = JSON.parse(xhr.responseText);
-              d.textContent = ('XMLHttpRequest GET response:', data);
+              var data = JSON.stringify(xhr.responseText);
+              d.textContent = data;
               // Do something with the data
             } else {
               throw new Error('XMLHttpRequest failed with status ' + xhr.status);
