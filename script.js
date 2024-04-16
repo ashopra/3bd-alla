@@ -32,9 +32,9 @@ b.onclick = function (){
       xhr.open('GET', 'https://3bda11a.000webhostapp.com/api/?action=get', true);
       xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
-          var data = JSON.parse(xhr.responseText);
-          d.textContent = xhr.responseText;
-          // Do something with the data
+          var data = JSON.stringify(xhr.responseText);
+          d.textContent = data;
+          // Do something with the data parse stringify
         }
       };
       xhr.send();
