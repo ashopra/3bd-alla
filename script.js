@@ -31,10 +31,18 @@ b.onclick = function (){
         var xhr = new XMLHttpRequest();
       xhr.open('GET', 'https://3bda11a.000webhostapp.com/api/?action=get', true);
       xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-          var data = JSON.stringify(xhr.responseText);
-          d.textContent = data;
-          // Do something with the data parse stringify
+        try {
+          if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+              var data = JSON.parse(xhr.responseText);
+              d.textContent = ('XMLHttpRequest GET response:', data);
+              // Do something with the data
+            } else {
+              throw new Error('XMLHttpRequest failed with status ' + xhr.status);
+            }
+          }
+        } catch (error) {
+          d.textContent = ('Error fetching data with XMLHttpRequest:', error);
         }
       };
       xhr.send();
