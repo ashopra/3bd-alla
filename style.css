@@ -1,10 +1,10 @@
 body{
      background-color: grey;
 }
-/*.conter {
-   position: fixed;
-    bottom: 0;
-}*/
+.conter {
+  /* position: fixed;*/
+    margin-bottom: 0;
+}
 .btn-t, .btn-g, .btn-p{
      display: block;
      text-align: center;
