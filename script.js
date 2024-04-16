@@ -27,5 +27,17 @@ a.onclick = function (){
   location.href = url + '?' + param;
 };
 //https://3bda11a.000webhostapp.com/api/
-b.onclick = function (){d.textContent = 'GET';};
+b.onclick = function (){
+        var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'https://3bda11a.000webhostapp.com/api/', true);
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          var data = JSON.parse(xhr.responseText);
+          d.textContent = data;
+          // Do something with the data
+        }
+      };
+      xhr.send();
+  //d.textContent = 'GET';
+};
 c.onclick = function (){d.textContent = 'POST';};
