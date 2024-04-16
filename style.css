@@ -1,10 +1,10 @@
 body{
      background-color: grey;
 }
-.conter {
-   /* position: fixed;*/
+/*.conter {
+   position: fixed;
     bottom: 0;
-}
+}*/
 .btn-t, .btn-g, .btn-p{
      display: block;
      text-align: center;
@@ -16,6 +16,7 @@ body{
      padding: 16px;
      cursor: pointer;
      border: 2px double blue;
+     bottom:0;
 }
 .stuts{
      text-align: center;
