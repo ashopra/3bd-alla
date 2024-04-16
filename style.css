@@ -2,7 +2,7 @@ body{
      background-color: grey;
 }
 .conter {
-    position: fixed;
+   /* position: fixed;*/
     bottom: 0;
 }
 .btn-t, .btn-g, .btn-p{
