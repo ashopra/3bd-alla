@@ -33,7 +33,7 @@ b.onclick = function (){
       xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
           var data = JSON.parse(xhr.responseText);
-          d.textContent = JSON.stringify(data);
+          d.textContent = xhr.responseText;
           // Do something with the data
         }
       };
