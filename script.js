@@ -29,7 +29,7 @@ a.onclick = function (){
 //https://3bda11a.000webhostapp.com/api/
 b.onclick = function (){
         var xhr = new XMLHttpRequest();
-      xhr.open('GET', 'https://3bda11a.000webhostapp.com/api/', true);
+      xhr.open('GET', 'https://3bda11a.000webhostapp.com/api/?action=get', true);
       xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
           var data = JSON.parse(xhr.responseText);
