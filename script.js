@@ -37,9 +37,9 @@ b.onclick = function (){
               var data = JSON.stringify(xhr.responseText);
               d.textContent = xhr.responseText;
               // Do something with the data
-            } else {
+            }/* else {
               throw new Error('XMLHttpRequest failed with status ' + xhr.status);
-            }
+            }*/
           }
         } catch (error) {
           d.textContent = error;
