@@ -29,7 +29,7 @@ a.onclick = function (){
 //https://3bda11a.000webhostapp.com/api/
 b.onclick = function (){
         var xhr = new XMLHttpRequest();
-      xhr.open('GET', 'https://3bda11a.000webhostapp.com/api/gemini.php', true);
+      xhr.open('GET', 'https://3bda11a.000webhostapp.com/api/twitter.php/me', true);
       xhr.onreadystatechange = function () {
         try {
           if (xhr.readyState === 4) {
