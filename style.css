@@ -3,6 +3,7 @@ body{
 }
 .conter {
      position: fixed;
+     width:100%;
      bottom: 0;
 }
 .btn-t, .btn-g, .btn-p{
