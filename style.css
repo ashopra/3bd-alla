@@ -2,8 +2,8 @@ body{
      background-color: grey;
 }
 .conter {
-  /* position: fixed;*/
-    margin-bottom: 0;
+     position: fixed;
+     bottom: 0;
 }
 .btn-t, .btn-g, .btn-p{
      display: block;
